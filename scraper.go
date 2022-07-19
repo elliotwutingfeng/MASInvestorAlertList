@@ -84,7 +84,7 @@ func main() {
 		rawURL = strings.TrimRight(rawURL, "/")
 
 		// convert hostname to lowercase
-		res := extractor.Extract(fasttld.URLParams{URL: rawURL})
+		res, _ := extractor.Extract(fasttld.URLParams{URL: rawURL})
 		subDomain := res.SubDomain
 		registeredDomain := res.RegisteredDomain
 		hostname := registeredDomain
