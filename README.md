@@ -12,7 +12,7 @@ Generate a machine-readable `.txt` blocklist of websites affiliated with [unregu
 
 ## Requirements
 
--   Go >= 1.18
+- Go >= 1.20
 
 ## Setup instructions
 
@@ -30,9 +30,9 @@ go run scraper.go
 
 ## Libraries/Frameworks used
 
--   [fasttld](https://github.com/elliotwutingfeng/go-fasttld)
--   [xurls](https://github.com/mvdan/xurls)
+- [fasttld](https://github.com/elliotwutingfeng/go-fasttld)
+- [xurls](https://github.com/mvdan/xurls)
 
 ## Monetary Authority of Singapore Terms of Use
 
-https://www.mas.gov.sg/terms-of-use
+<https://www.mas.gov.sg/terms-of-use>

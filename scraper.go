@@ -31,7 +31,10 @@ func main() {
 	zerowidthRegex := regexp.MustCompile("^[\u200B-\u200D\uFEFF]")
 	whitespaceRegex := regexp.MustCompile("\\s+")
 
-	resp, err := http.Get("https://www.mas.gov.sg/api/v1/ialsearch?json.nl=map&wt=json&rows=10000&q=*:*&sort=date_dt+desc&start=0")
+	resp, err := http.Get(
+		"https://eservices.mas.gov.sg/statistics/api/v1/ialsearch?" +
+			"json.nl=map&wt=json&sort=date_dt%20desc,approveddate_dt%20desc&q=*:*&rows=10000&start=0",
+	)
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
